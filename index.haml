@@ -9,17 +9,34 @@
     %script{:type => "text/javascript", :src => "//use.typekit.net/iwv2qgq.js"}
     %script{:type => "text/javascript"} try{Typekit.load();}catch(e){}
   %body
-    %header#header{:role => "banner"}
-      %nav.container.group
-        %a{:href => "articles"} Articles
-        //%img{:src => "images/ap-logo.png", :alt => "Agent Pronto"}/
-        %a{:href => "portfolio"} Portfolio
-    %section.site{:role => "main"}
-      %section
-        .container
-          
-      %aside.social
-      
-      %aside.recent-articles
-    //%script{:type => "text/javascript", :src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"}
-    //%script{:type => "text/javascript", :src => "js/init.min.js"}
+    .container
+      %header#header{:role => "banner"}
+        %nav.group{:role => "navigation"}
+          %a{:href => "articles"} Articles
+          %a{:href => "portfolio"} Portfolio
+      %section.site{:role => "main"}
+        %img.banner{:src => "images/profile.png", :alt => "Peter Ostrander"}/
+        %h1.title Hi, I&rsquo;m Peter
+        %p I'm a frontend web developer and designer. I like to make things using HTML, CSS, and JavaScript; and by extension &mdash; <a href="http://haml.info" target="_blank">Haml</a>, <a href="http://sass-lang.com" target="_blank">Sass</a>, and <a href="http://coffeescript.org" target="_blank">CoffeeScript</a>.
+
+        %p Websites are super-cool, but that's not all I like to make. Sometimes, I design and build <a href="http://instagram.com/p/Ss50D0u-94/" target="_blank">furniture</a>. Once, I even made an <a href="http://www.flickr.com/photos/peterostrander/sets/72157625104172420/" target="_blank">arcade cabinet</a>. I used to make movies, too &mdash; but now I just <a href="http://www.imdb.com/list/aG7Fsc5qIWE/" target="_blank">watch a lot of them</a>.
+
+        %p Need to get in touch? You can email me at <a href="mailto: peter@peterostrander.com" target="_blank">peter@peterostrander.com</a>
+
+      %aside.social{:role => "navigation"}
+        %a{:href => "http://twitter.com/peterostrander", :target => "_blank"}<
+          %img{:src => "images/twitter.png", :alt => "Twitter"}/
+        %a{:href => "http://github.com/peterostrander", :target => "_blank"}<
+          %img{:src => "images/github.png", :alt => "GitHub"}/
+        %a{:href => "http://dribbble.com/peterostrander", :target => "_blank"}<
+          %img{:src => "images/dribbble.png", :alt => "Dribbble"}/
+        %a{:href => "http://instagram.com/peterostrander", :target => "_blank"}<
+          %img{:src => "images/instagram.png", :alt => "Instagram"}/
+    
+      %aside.recent-articles{:role => "navigation"}
+        %h1
+          Recent Articles
+        %p
+          %a{:href => "article/the-starter-league"} The Starter League
+    %script{:type => "text/javascript", :src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"}
+    %script{:type => "text/javascript", :src => "js/init.min.js"}
