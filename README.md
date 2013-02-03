@@ -1,0 +1,1 @@
+A project created for The Starter League's Visual Design course.
