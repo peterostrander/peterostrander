@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.peterostrander\.com [NC]
+RewriteRule (.*) http://peterostrander.com/$1 [R=301,L]
