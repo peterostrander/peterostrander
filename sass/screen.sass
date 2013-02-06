@@ -5,6 +5,7 @@
 $bg_color: #fffffa
 $text_color: #272727
 $link_color: #da3c26
+$i_color: #da3c26
 $link_color_hover: saturate($link_color, 20%)
 
 $small: 500px
@@ -55,7 +56,7 @@ html
 body
   background: $bg_color
   color: $text_color
-  font-family: 'open-sans', Helvetica, sans-serif
+  font-family: 'pt-serif', Georgia, serif
 
 a
   color: $link_color
@@ -68,6 +69,8 @@ a
 h1
   font-weight: 600
   font-family: 'proxima-nova', Helvetica, sans-serif
+  i
+    color: #da3c26
 
 p
   +trailer(1)
@@ -80,6 +83,7 @@ p
 #header
   font-weight: 600
   font-family: 'proxima-nova', Helvetica, sans-serif
+  text-align: center
   +adjust-font-size-to(32px)
   +adjust-leading-to(1, 32px)
   +padding-leader(1, 32px)
@@ -93,8 +97,6 @@ p
       margin-left: 0
     &:hover
       color: $link_color_hover
-  a[href="/"]
-    color: $link_color
 
 .container
   margin: 0 auto
@@ -103,17 +105,21 @@ p
 
 h1.title
   white-space: nowrap
-  +adjust-leading-to(5, 100px)
+  +adjust-font-size-to(100px)
+  +adjust-leading-to(3, 100px)
+  +trailer(1, 100px)
 
 h1.headline
-  +adjust-font-size-to(65px)
+  +adjust-font-size-to(48px)
+  +adjust-leading-to(1.5, 48px)
+  +trailer(1, 48px)
+  text-align: center
 
 img.banner
   display: block
   margin: 0 auto
   max-width: 100%
-  +leader(0.5)
-  +trailer(0.5)
+  +trailer(1)
 
 .social
   text-align: center
@@ -136,5 +142,6 @@ img.banner
     +respond-to(small)
       max-width: 63.3333333%
 
+.articles,
 .recent-articles
   text-align: center
