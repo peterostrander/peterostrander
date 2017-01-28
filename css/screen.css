@@ -136,4 +136,4 @@ h1.headline{font-size:2em;line-height:1.5em;line-height:1.125em;margin-bottom:0.
 .social{text-align:center;vertical-align:middle}
 .social a{display:inline-block;margin-left:1.5em}
 .social a:first-child{margin-left:0}
-.social img{display:inline-block;vertical-align:middle;height:1.75em}
+.social img{display:block;vertical-align:middle;height:1.75em;margin:0 auto;}
